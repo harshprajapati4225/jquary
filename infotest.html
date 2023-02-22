@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .numbers {
+        display: flex;
+        flex-direction: row;
+        background: cyan;
+
+      }
+      button {
+        size: 25px;
+        padding: 0 20px 0 20px;
+        margin: 10px 20px 0 25px;
+
+      }
+      #cal{
+        background-color: cyan;
+        height: 250px;
+        width: 300px;
+      }
+      input{
+        width: 300px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-column: 5 / span 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cal">
+      <input type="number"/>
+      <div class="numbers">
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+      </div>
+      <div class="numbers">
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+      </div>
+      <div class="numbers">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+      </div>
+      <div class="numbers">
+        <button value="0">0</button>
+      </div>
+      <div class="operation">
+        <div id="grid">
+            <div><button value="*">*</button></div>
+            <div><button value="-">-</button></div>
+            <div><button value="+">+</button></div>
+            <div><button value="/">/</button></div>
+            <div><button onclick="f1()">ENTER</button></div>
+        </div>
+      </div>
+    </div>
+    <script>
+        let x = document
+             if(z==='+')
+            {
+                document.getElementById('rs').style.display="block";
+                let a=parseInt(x)+parseInt(y);
+                
+                document.getElementById('rs').innerHTML='results is:'+a;
+            }
+            else if(z=='-')
+            {
+                document.getElementById('rs').style.display="block";
+                let a=x-y;
+                document.getElementById('rs').innerHTML='results is:'+a;
+            }
+            else if(z=='*')
+            {
+                document.getElementById('rs').style.display="block";
+                let a=x*y;
+                document.getElementById('rs').innerHTML='results is:'+a;
+            }
+            else if(z=='/')
+            {
+                document.getElementById('rs').style.display="block";
+                a=x/y;
+                document.getElementById('rs').innerHTML='results is:'+a;
+            }
+            else
+            {
+                document.getElementById('rs').style.display="block";
+                document.getElementById('rs').innerHTML='invalid';
+            }
+    </script>
+  </body>
+</html>

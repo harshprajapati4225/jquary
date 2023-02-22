@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shubhkey infotech llp</title>
+    <meta
+      name="description"
+      content="this website contains descriptionabout our company's offical website. our company name is ... this website have info about our team members,info,location and portfolio"
+    />
+    <meta property="og:url" content="www.google.com" />
+    <meta property="og:image" content="image file path" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Harsh Prajapati Front-end Developer Blog"
+    />
+    <link rel="stylesheet" href="css/taskforhtmlcss.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="navigation">
+      <button id="hamburger" onclick="hamburger()">☰</button><br>
+      <div class="dropdown">
+        <button class="navs" onclick="location.href='info'">HOME</button>
+        <button class="navs" onclick="location.href='#ourservices'">
+          OUR SERVICES
+        </button>
+        <button class="navs" onclick="location.href='#team'">
+          MEET OUR TEAM
+        </button>
+        <div id="dropmenu">
+          <button id="dropdownbtn" onclick="dropdown()">OTHERS</button>
+          <div id="dropdown-content">
+            <a href="#contect" class="navigation">contect us</a>
+            <a href="#testomonial" class="navigation">testomonial</a>
+            <a href="#location" class="navigation">location</a>
+            <a href="#blog" class="navigation">blogs</a>
+          </div>
+        </div>
+        <div id="top-button">
+          <i class="fa-solid fa-arrow-up" onclick="gototop()"
+            ><a href="" onclick="gototop()" id="gototop"></a
+          ></i>
+        </div>
+      </div>
+    </header>
+    <section id="info">
+      <div class="info1 div">
+        <img src="assets/gandhi.jpeg" class="images" alt="gandhi" />
+        <p>
+          Mahatma Gandhi, byname of Mohandas Karamchand Gandhi, (born October 2,
+          1869, Porbandar, India—died January 30, 1948, Delhi), Indian lawyer,
+          politician, social activist, and writer who became the leader of the
+          nationalist movement against the British rule of India. As such, he
+          came to be considered the father of his country.Aslo he is very
+          populer.
+        </p>
+      </div>
+      <div class="info1 div">
+        <img src="assets/sardar.jpg" class="images" alt="sardar" />
+        <p>
+          Vallabhbhai Patel, in full Vallabhbhai Jhaverbhai Patel, byname Sardar
+          Patel (Hindi: “Leader Patel”), (born October 31, 1875, Nadiad,
+          Gujarat, India—died December 15, 1950, Bombay [now Mumbai]), Indian
+          barrister and statesman, one of the leaders of the Indian National
+          Congress during the struggle for Indian independence.
+        </p>
+      </div>
+      <div class="info1 div">
+        <img src="assets/modi.jpg" alt="freedomfighter" class="images" />
+        <p>
+          Narendra Modi, in full Narendra Damodardas Modi, (born September 17,
+          1950, Vadnagar, India), Indian politician and government official who
+          rose to become a senior leader of the Bharatiya Janata Party (BJP). In
+          2014 he led his party to victory in elections to the Lok Sabha (lower
+          chamber of the Indian parliament), after which he was sworn in as
+          prime minister of India.
+        </p>
+      </div>
+    </section>
+    <section id="flashbox">
+      <!-- <div class="flashbox">
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/blog.jpg" alt="image" /> <button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/blog1.jpeg" alt="image" /><button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/blog2.png" alt="image" /><button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/blog3.png" alt="image" /><button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/blog4.jpg" alt="image" /><button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/portfolio1.jpg" alt="image" /><button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/portfolio2.png" alt="image" /><button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/portfolio3.jpg" alt="image" /><button>X</button></a
+        >
+        <a href="javascript:(0)" class="flash"
+          ><img src="assets/portfolio4.jpg" alt="image" /><button>X</button></a
+        >
+      </div> -->
+      <div class="row">
+        <div class="column">
+          <img src="/assets/portfolio1.jpg" style="width:80%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="/assets/portfolio2.png" style="width:80%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="/assets/portfolio3.jpg" style="width:80%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="/assets/portfolio4.jpg" style="width:80%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()"><button>X</button></span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="/assets/portfolio1.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="/assets/portfolio2.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="/assets/portfolio3.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="/assets/portfolio4.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="/assets/portfolio1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/portfolio2.png" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/portfolio3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/portfolio4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="service">
+      <h2 id="ourservices">OUR SERVICES</h2>
+      <div class="allservice">
+        <div class="service">
+          <i class="fa-solid fa-laptop-code favicon"></i>
+          <p class="servicetext">Web Development</p>
+          <div>
+            <button class="extrainfo">Read More</button>
+            <p class="moreinfo">some more text </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <i class="fa-sharp fa-solid fa-screwdriver-wrench favicon"></i>
+          <p class="servicetext">Maintenance</p>
+          <div>
+            <button class="extrainfo">Read More</button>
+            <p class="moreinfo">some more text</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <i class="fa-solid fa-code favicon"></i>
+          <p class="servicetext">Coading</p>
+          <div>
+            <button class="extrainfo">Read More</button>
+            <p class="moreinfo">some more text</p>
+          </div>
+        </div>
+      </div>
+      <div class="allservice">
+        <div class="service">
+          <i class="fa-solid fa-microchip favicon"></i>
+          <p class="servicetext">IoT</p>
+          <div>
+            <button class="extrainfo">Read More</button>
+            <p class="moreinfo">some more text</p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-robot favicon"></i>
+          <p class="servicetext">AI / ML</p>
+          <div>
+            <button class="extrainfo">Read More</button>
+            <p class="moreinfo">some more text</p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fa-brands fa-paypal favicon"></i>
+          <p class="servicetext">Payment Gatways</p>
+          <div>
+            <button class="extrainfo">Read More</button>
+            <p class="moreinfo">some more text</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team">
+      <h1 id="teammembers">OUR TEAM MEMBERS</h1>
+      <div class="teamtab">
+        <button class="tablinks" onclick="openinfo(event, 'ceo')">ceo</button>
+        <button class="tablinks" onclick="openinfo(event, 'project-manager')">
+          project-manager
+        </button>
+        <button class="tablinks" onclick="openinfo(event, 'webdeveloper')">
+          webdeveloper
+        </button>
+        <button class="tablinks" onclick="openinfo(event, 'hr')">HR</button
+        ><br />
+      </div>
+      <div id="teaminfo">
+        <div class="ourteam" id="ceo">
+          <img src="assets/ceo.jpg" alt="ceo" class="members" />
+          <h2 class="memberinfo">John Doe</h2>
+          <h3 class="memberinfo"><i>CEO</i></h3>
+          <p class="memberinfo">
+            Some text that describes me lorem ipsum ipsum lorem.
+          </p>
+          <i class="memberinfo">example@example.com</i><br />
+          <br />
+          <button class="memberinfo membercontect">Contect Me</button>
+        </div>
+        <div class="ourteam" id="project-manager">
+          <img src="assets/member2.jpg" alt="member" class="members" />
+          <h2 class="memberinfo">Brickson Tim</h2>
+          <h3 class="memberinfo"><i>Project Manager</i></h3>
+          <p class="memberinfo">
+            Some text that describes me lorem ipsum ipsum lorem.
+          </p>
+          <i class="memberinfo">example@example.com</i><br />
+          <br />
+          <button class="memberinfo membercontect">Contect Me</button>
+        </div>
+        <div class="ourteam" id="webdeveloper">
+          <img src="assets/member3.jpg" alt="member" class="members" />
+          <h2 class="memberinfo">Jonathan james</h2>
+          <h3 class="memberinfo"><i>Developer</i></h3>
+          <p class="memberinfo">
+            Some text that describes me lorem ipsum ipsum lorem.
+          </p>
+          <i class="memberinfo">example@example.com</i><br />
+          <br />
+          <button class="memberinfo membercontect">Contect Me</button>
+        </div>
+        <div class="ourteam" id="hr">
+          <img src="assets/member1.jpg" alt="member" class="members" />
+          <h2 class="memberinfo">Rechal Ford</h2>
+          <h3 class="memberinfo"><i>HR</i></h3>
+          <p class="memberinfo">
+            Some text that describes me lorem ipsum ipsum lorem.
+          </p>
+          <i class="memberinfo">example@example.com</i><br />
+          <br />
+          <button class="memberinfo membercontect">Contect Me</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 style="text-align: center">CONTECT US</h1>
+      <section id="contect">
+        <div class="contect">
+          <h1 class="contecttext">contact us</h1>
+          <h3>ceo@xyzinfotech.com</h3>
+          <h3>+91684975xxx3</h3>
+        </div>
+        <div class="contect">
+          <h1 class="contecttext">enquire us</h1>
+          <form name="enquireus" action="index.html" method="" id="enquireus">
+            <input type="text" placeholder="name" name="name" id="name" /><br /><br />
+            <input type="email" placeholder="email" name="email" id="email" /><br /><br />
+            <input
+              type="number"
+              placeholder="phone number"
+              name="phoneno" id="phoneno"
+            /><br /><br />
+            <button type="submit" value="Submit" onclick="validateForm()">
+              submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <section id="testomonial">
+      <h1 style="text-align: center">OUR CLIENTS SAYS</h1>
+      <div id="testomonials">
+        <div class="clients client1">
+          <img src="assets/client1.jpg" alt="client" class="client" />
+          <p class="reviews">
+            I am glad to say you that , I am dealing with this company for a
+            long time now.I have taken many blogs from thier services and I am
+            never disappointed with their services.
+          </p>
+          <i>~MR. CHUDASAMA</i>
+          <i>13 JAN 2023</i><br />
+        </div>
+        <div class="clients client2">
+          <img src="assets/client2.jpg" alt="client" class="client" />
+          <p class="reviews">
+            My main website is developed by this company and I am happy to say
+            that , I am very satisfied with their services and I can vouch for
+            this company.
+          </p>
+          <i>~MR. JADEJA</i>
+          <i>20 DEC 2022</i>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <div>
+        <h1 style="text-align: center">OUR BLOGS</h1>
+        <div class="blogs">
+          <div class="flipcard">
+            <div class="card">
+              <div class="card-front">
+                <img src="assets/blog1.jpeg" alt="blog" class="flipimage" />
+              </div>
+              <div class="card-back">
+                <p>Gaming Blog</p>
+                <br />
+                <button onclick="location.href='blog.html'" class="btn">
+                  READ MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flipcard">
+            <div class="card">
+              <div class="card-front">
+                <img src="assets/blog2.png" alt="blog" class="flipimage" />
+              </div>
+              <div class="card-back">
+                <p>Cyber Sequrity</p>
+                <br />
+                <button onclick="location.href='blog.html'" class="btn">
+                  READ MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flipcard">
+            <div class="card">
+              <div class="card-front">
+                <img src="assets/blog3.png" alt="blog" class="flipimage" />
+              </div>
+              <div class="card-back">
+                <p>Cloud Computing</p>
+                <br />
+                <button onclick="location.href='blog.html'" class="btn">
+                  READ MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flipcard">
+            <div class="card">
+              <div class="card-front">
+                <img src="assets/blog4.jpg" alt="blog" class="flipimage" />
+              </div>
+              <div class="card-back">
+                <p>Online Fraud</p>
+                <br />
+                <button onclick="location.href='blog.html'" class="btn">
+                  READ MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h1 style="text-align: center">PORTFOLIOS</h1>
+      <div class="portfolios">
+        <div class="portfoliocard">
+          <div class="portfolio">
+            <div class="portfolio-front">
+              <img
+                src="assets/portfolio1.jpg"
+                alt="blog"
+                class="portfolioimg"
+              />
+            </div>
+            <div class="portfolio-back">
+              <p>Cyber Security Work</p>
+              <br />
+              <button onclick="location.href='portfolio.html'" class="btn">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="portfoliocard">
+          <div class="portfolio">
+            <div class="portfolio-front">
+              <img
+                src="assets/portfolio2.png"
+                alt="blog"
+                class="portfolioimg"
+              />
+            </div>
+            <div class="portfolio-back">
+              <p>Cloud Computing Work</p>
+              <br />
+              <button onclick="location.href='portfolio.html'" class="btn">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="portfoliocard">
+          <div class="portfolio">
+            <div class="portfolio-front">
+              <img
+                src="assets/portfolio3.jpg"
+                alt="blog"
+                class="portfolioimg"
+              />
+            </div>
+            <div class="portfolio-back">
+              <p>Designing Work</p>
+              <br />
+              <button onclick="location.href='portfolio.html'" class="btn">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="portfoliocard">
+          <div class="portfolio">
+            <div class="portfolio-front">
+              <img
+                src="assets/portfolio4.jpg"
+                alt="blog"
+                class="portfolioimg"
+              />
+            </div>
+            <div class="portfolio-back">
+              <p>Website Development Work</p>
+              <br />
+              <button onclick="location.href='portfolio.html'" class="btn">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="slid">
+        <div id="slidebox">
+          <div id="slidesimg">
+            
+            <img src="assets/portfolio1.jpg" alt="image" id="slideimg" />
+            <!-- <img src="assets/portfolio4.jpg" alt="image" class="slideimg" />
+            <img src="assets/portfolio3.jpg" alt="image" class="slideimg" />
+            <img src="assets/portfolio2.png" alt="image" class="slideimg" />
+            <img src="assets/blog2.png" alt="image" class="slideimg" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="location">
+      <h1 style="text-align: center">LOCATION</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.304198807587!2d72.52210691466193!3d23.01260038495815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85310732d9ad%3A0x40d8c324e10e363a!2sShubhKey%20Infotech!5e0!3m2!1sen!2sin!4v1675685930567!5m2!1sen!2sin"
+        width="100%"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section id="faq">
+      <button class="accordion">Que 1</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <button class="accordion">Que 2</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <button class="accordion">Que 3</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </section>
+    <footer id="footer">
+      <p class="footer">copy rights 2022 reserved</p>
+    </footer>
+    <script src="js/jquary.js"></script>
+    <script src="js/task.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
+</html>
